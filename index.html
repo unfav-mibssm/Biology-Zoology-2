@@ -45,13 +45,29 @@
             overflow-x: hidden;
         }
 
+        /* --- LINK RESET (REMOVES BLUE BOX) --- */
+        a {
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+            text-decoration: none;
+        }
+
+        /* --- HEADER CLICK INTERACTION --- */
+        .plus-two-link {
+            display: inline-block;
+            transition: transform 0.1s ease;
+        }
+
+        .plus-two-link:active {
+            transform: scale(0.95);
+        }
+
         .plus-two {
             font-family: 'PlusTwoFont', sans-serif;
             color: #7E7E62;
             font-size: 1.4rem;
             margin-bottom: 25px;
             display: inline-block;
-            text-decoration: none;
         }
 
         h1 {
@@ -86,15 +102,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            text-decoration: none;
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-            -webkit-tap-highlight-color: transparent;
         }
 
         .social-icon:active { transform: scale(1.2); background-color: #92593B; }
 
-        /* --- DIVIDER SPACING FIXED --- */
+        /* --- DIVIDER SPACING --- */
         .wp-divider {
             border: 0;
             height: 2px;
@@ -121,7 +135,6 @@
         .btn {
             background-color: #7E7E62;
             color: #ffffff;
-            text-decoration: none;
             padding: 16px 25px;
             border-radius: 12px;
             font-family: 'ButtonFont', sans-serif;
@@ -131,7 +144,6 @@
             text-align: center;
             transition: all 0.2s ease;
             box-shadow: 0 4px 10px rgba(126, 126, 98, 0.15);
-            -webkit-tap-highlight-color: transparent;
             box-sizing: border-box;
         }
 
@@ -153,7 +165,9 @@
 <body>
 
     <div class="reveal active">
-        <a href="http://www.instagram.com/unfav.mibssm" class="plus-two">PLUS TWO</a>
+        <a href="http://www.instagram.com/unfav.mibssm" class="plus-two-link">
+            <div class="plus-two">PLUS TWO</div>
+        </a>
         <h1>Zoology</h1>
         <p class="tagline">Welcome to zoology… where everything poops differently. 💩📚</p>
     </div>
@@ -256,6 +270,5 @@
             });
         }
     </script>
-
 </body>
 </html>
