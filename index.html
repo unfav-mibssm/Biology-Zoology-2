@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plus Two Zoology</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#7E7E62">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        /* --- FONT REGISTRATION --- */
+        @font-face { font-family: 'PlusTwoFont'; src: url('Plustwo.ttf'); }
+        @font-face { font-family: 'SubjectFont'; src: url('Subject.ttf'); }
+        @font-face { font-family: 'CaptionFont'; src: url('Caption.ttf'); }
+        @font-face { font-family: 'ChapterNoFont'; src: url('Chapterno.ttf'); }
+        @font-face { font-family: 'ChapterNameFont'; src: url('Chapter.ttf'); }
+        @font-face { font-family: 'ButtonFont'; src: url('Font.ttf'); }
+
+        /* --- GLOBAL STYLES --- */
+        body {
+            background-color: #ffffff;
+            color: #2c2c2c;
+            margin: 0 auto;
+            padding: 40px 25px;
+            max-width: 600px;
+            -webkit-font-smoothing: antialiased;
+            text-align: left;
+        }
+
+        /* --- HEADER SECTION --- */
+        .plus-two-link {
+            text-decoration: none;
+            display: inline-block;
+            outline: none; 
+            -webkit-tap-highlight-color: transparent;
+            transition: transform 0.1s ease;
+        }
+
+        .plus-two-link:active {
+            transform: scale(0.95);
+        }
+
+        .plus-two {
+            font-family: 'PlusTwoFont', sans-serif;
+            color: #7E7E62;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'SubjectFont', sans-serif;
+            font-size: 3rem;
+            margin: 10px 0;
+            line-height: 1.1;
+            color: #222;
+        }
+
+        .tagline {
+            font-family: 'CaptionFont', sans-serif;
+            font-size: 1.15rem;
+            margin: 15px 0 0 0;
+            color: #333;
+        }
+
+        /* --- SOCIAL ICONS SECTION --- */
+        .social-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
+
+        .social-icon {
+            background-color: #7E7E62;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .social-icon:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .social-icon:active {
+            transform: scale(0.92);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* --- CENTERED DIVIDER --- */
+        .wp-divider {
+            border: 0;
+            height: 2px;
+            background-color: #92593B; 
+            width: 85px;
+            margin: 20px auto; 
+        }
+
+        /* --- CHAPTER LABELS --- */
+        .chapter-label {
+            font-family: 'ChapterNoFont', sans-serif;
+            font-size: 1.08rem;
+            margin-bottom: 10px;
+            display: block;
+            color: #333;
+        }
+
+        .chapter-label strong {
+            font-family: 'ChapterNameFont', sans-serif;
+            font-weight: normal;
+        }
+
+        /* --- BUTTONS --- */
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 0;
+        }
+
+        .btn {
+            background-color: #7E7E62;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 4px;
+            font-family: 'ButtonFont', sans-serif;
+            font-size: 1.1rem;
+            width: fit-content;
+            display: inline-block;
+            text-align: center;
+            transition: transform 0.1s ease;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn:active {
+            transform: scale(0.96);
+        }
+
+        /* --- FOOTER (Matches Chemistry/Maths Serif style) --- */
+        .footer {
+            font-family: serif; 
+            font-size: 1.2rem;
+            margin-top: 20px;
+            padding-bottom: 40px;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="http://www.instagram.com/unfav.mibssm" class="plus-two-link">
+        <div class="plus-two">PLUS TWO</div>
+    </a>
+    
+    <h1>Zoology</h1>
+    <p class="tagline">Welcome to zoology… where everything poops differently. 💩📚</p>
+
+    <hr class="wp-divider">
+
+    <div class="social-container">
+        <a href="http://www.instagram.com/unfav.mibssm" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://youtube.com/@unfav.mibssm" class="social-icon"><i class="fab fa-youtube"></i></a>
+        <a href="https://t.me/Mibu_Techy" class="social-icon"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.snapchat.com/add/unfav.mibssm" class="social-icon"><i class="fab fa-snapchat"></i></a>
+        <a href="https://github.com/unfav-mibssm" class="social-icon"><i class="fab fa-github"></i></a>
+    </div>
+
+    <hr class="wp-divider">
+
+    <span class="chapter-label">Chapter 1 – <strong>HUMAN REPRODUCTION</strong></span>
+    <div class="btn-container">
+        <a href="https://www.youtube.com/live/A0jhTdror9M" class="btn">Exam Winner Oneshot</a>
+        <a href="https://www.youtube.com/live/2vNg_F7EGcU" class="btn">Xylem Oneshot</a>
+    </div>
+
+    <hr class="wp-divider">
+
+    <span class="chapter-label">Chapter 2 – <strong>REPRODUCTIVE HEALTH</strong></span>
+    <div class="btn-container">
+        <a href="https://www.youtube.com/live/lpL2qQ_5hA8" class="btn">Exam Winner Oneshot</a>
+        <a href="https://plus2oneshotss.wordpress.com/oneshot-not-fount/" class="btn">Xylem Oneshot</a>
+    </div>
+
+    <hr class="wp-divider">
+
+    <span class="chapter-label">Chapter 3 – <strong>PRINCIPLE OF INHERITANCE AND VARIATIONS</strong></span>
+    <div class="btn-container">
+        <a href="https://www.youtube.com/live/VTkZeZwNqdw" class="btn">Exam Winner Oneshot</a>
+        <a href="https://www.youtube.com/live/iCxHpyyAu24" class="btn">Xylem Oneshot</a>
+    </div>
+
+    <hr class="wp-divider">
+
+    <span class="chapter-label">Chapter 4 – <strong>MOLECULAR BASIS OF INHERITANCE</strong></span>
+    <div class="btn-container">
+        <a href="https://www.youtube.com/live/YhcGfY2vMT0" class="btn">Exam Winner Oneshot</a>
+        <a href="https://www.youtube.com/live/kbs83xCjzu4" class="btn">Xylem Oneshot</a>
+    </div>
+
+    <hr class="wp-divider">
+
+    <span class="chapter-label">Chapter 5 – <strong>EVOLUTION</strong></span>
+    <div class="btn-container">
+        <a href="https://www.youtube.com/live/xDAraFT1834" class="btn">Exam Winner Oneshot</a>
+        <a href="https://www.youtube.com/live/ns4w1ZjdnCI" class="btn">Xylem Oneshot</a>
+    </div>
+
+    <hr class="wp-divider">
+
+    <span class="chapter-label">Chapter 6 – <strong>HUMAN HEALTH AND DISEASES</strong></span>
+    <div class="btn-container">
+        <a href="https://www.youtube.com/live/G6fyyfhVW_w" class="btn">Exam Winner Oneshot</a>
+        <a href="https://www.youtube.com/live/4eCFagNOx7M" class="btn">Xylem Oneshot</a>
+    </div>
+
+    <hr class="wp-divider">
+
+    <span class="chapter-label">Chapter 7 – <strong>MICROBES IN HUMAN WELFARE</strong></span>
+    <div class="btn-container">
+        <a href="https://www.youtube.com/live/VNoHGx7MCZ0" class="btn">Exam Winner Oneshot</a>
+        <a href="https://plus2oneshotss.wordpress.com/oneshot-not-fount/" class="btn">Xylem Oneshot</a>
+    </div>
+
+    <hr class="wp-divider">
+
+    <span class="chapter-label">Chapter 8 – <strong>BIODIVERSITY AND CONSERVATION</strong></span>
+    <div class="btn-container">
+        <a href="https://www.youtube.com/live/OtGNJMUKrFw" class="btn">Exam Winner Oneshot</a>
+        <a href="https://plus2oneshotss.wordpress.com/oneshot-not-fount/" class="btn">Xylem Oneshot</a>
+    </div>
+
+    <hr class="wp-divider">
+
+    <p class="footer">That’s it.</p>
+
+    <script>
+        if ('service-worker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js');
+            });
+        }
+    </script>
+
+</body>
+</html>
